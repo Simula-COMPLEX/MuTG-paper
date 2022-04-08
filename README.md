@@ -16,7 +16,7 @@ First, you need to activate the conda environment:\
 ```conda activate myenv```\
 Then, you can start the program (from the 'code' root) as follows: 
 
-### MutGT
+### MutTG
 ```python main_int.py program_name difficult_level input_bit output_bit mutant_num k file_name algorithm``` \
 where
 * *program_name* is the name of the original program. Available program in the repository are: AS, BV, CE, IQ, and QR
@@ -28,6 +28,6 @@ where
 * *file_name* is the name of the generated excel file. Each excel workbook contains 5 sheets: gen_test, gen_test_count, FUN_test, VAR_test and objective log.
 * *algorithm* is either 'Search' or 'RS' to run NSGA-II or random search.
 
-### MutGT without discount
+### MutTG without discount
 ```python main_int_adj.py program_name difficult_level input_bit output_bit mutant_num k file_name algorithm``` 
 
