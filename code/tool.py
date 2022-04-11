@@ -39,7 +39,7 @@ def print_variables_to_excel_sheet_int(solutions, test_sheet):
         solution_idx += 1
 
 
-def print_gen_test_count_to_file(test_sheet1, test_sheet2, input_bit, mutant_difficult_list):
+def print_gen_test_count_to_file(test_sheet1, test_sheet2):
     all_rows = test_sheet1.rows
     all_rows_tuple = tuple(all_rows)
     print("len(all_rows_tuple)")
