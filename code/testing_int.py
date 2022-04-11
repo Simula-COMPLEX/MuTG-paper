@@ -5,7 +5,7 @@ import numpy as np
 import rpy2.robjects as robjects
 
 from openpyxl import Workbook
-from programs import CE, AS, SM, BV, QRAM, IQFT
+from programs import CE, AS, BV, QRAM, IQFT
 import csv
 
 
