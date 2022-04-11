@@ -11,9 +11,7 @@ from jmetal.algorithm.multiobjective.nsgaii import NSGAII
 from openpyxl import Workbook
 from INTProblem import TestingProblem
 from jmetal.util.solution import print_function_values_to_file, print_variables_to_file
-from tool import print_gen_test_count_to_file, print_variables_to_excel_sheet_int, print_function_values_to_excel_sheet, \
-    get_mutant_difficult_list
-
+from tool import print_gen_test_count_to_file, print_variables_to_excel_sheet_int, print_function_values_to_excel_sheet
 
 def search_int(program_name, difficult_level, input_bit, output_bit, mutant_num, k, file_name, alg):
     # input_bit = 10 
@@ -60,7 +58,7 @@ def search_int(program_name, difficult_level, input_bit, output_bit, mutant_num,
 
     algorithm.run()
 
-    print_gen_test_count_to_file(test_sheet1, test_sheet2, input_bit, mutant_difficult_list)
+    #print_gen_test_count_to_file(test_sheet1, test_sheet2)
 
     front = algorithm.get_result()
     # Save results to file
