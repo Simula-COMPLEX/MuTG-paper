@@ -26,7 +26,7 @@ def search_int(program_name, difficult_level, input_bit, output_bit, mutant_num,
     test_sheet4 = wb.create_sheet('VAR_test', 3)
     test_sheet5 = wb.create_sheet('objective log', 4)
 
-    mutant_difficult_list = get_mutant_difficult_list(program_name, difficult_level)
+    #mutant_difficult_list = get_mutant_difficult_list(program_name, difficult_level)
 
     for i in range(mutant_num):
         test_sheet1.append([0] * pow(2, input_bit))  
@@ -58,7 +58,7 @@ def search_int(program_name, difficult_level, input_bit, output_bit, mutant_num,
 
     algorithm.run()
 
-    #print_gen_test_count_to_file(test_sheet1, test_sheet2)
+    print_gen_test_count_to_file(test_sheet1, test_sheet2)
 
     front = algorithm.get_result()
     # Save results to file
